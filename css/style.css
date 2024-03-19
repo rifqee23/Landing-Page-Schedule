@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "sans-serif";
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 23%, rgba(0,212,255,1) 95%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.content {
+    height: 100vh;
+}
+
+.container__header {
+    padding: 0.75rem 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container__header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+}
+
+.container__header__nav a  {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container__header__nav__menu {
+    display: flex;
+    list-style: none;
+}
+
+.container__header__nav__menu a {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+/*hero*/
+.container__hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 12rem;
+}
+
+.container__hero__jumbotron {
+    padding-top: 2rem;
+    width: 50%;
+    color: #fff ;
+}
+
+.container__hero__jumbotron h1 {
+    font-size: 2rem;
+}
+
+.container__hero__jumbotron__npm {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.container__hero__jumbotron__jurusan {
+    margin-bottom: 0.5rem;
+}
+
+.container__hero__jumbotron__univ {
+    font-size: 3rem;
+}
+
+.container__hero__jumbotron__btn {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container__hero__image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    animation: floating 5s infinite;
+}
+
+.container__hero__image img {
+    padding-right: 4rem;
+}
+
+/*autotype*/
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    animation: typing 5s steps(40,end) , blink-caret .75s step-end infinite;
+    max-width: 452px;
+}
+
+/*main*/
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.main__tables {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.main__tables tr{
+    background-color: #ddd;
+}
+
+.main__tables th,
+.main__tables td {
+    padding: 8px;
+}
+
+.main__tables th {
+    background-color: #333;
+    color: #ffffff;
+
+}
+.main__tables th,
+.main__tables td {
+    border-right: 1px solid #fff;
+}
+ .main__tables .hari {
+     border-top: 1px solid #ffffff;
+ }
+
+
+
+.main__tables tr:hover {
+    background-color: #ccc;
+}
+
+
+@keyframes typing {
+    from {width: 0}
+    to { width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: #fff}
+
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
